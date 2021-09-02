@@ -13,6 +13,7 @@
 		319FB40826DF55DA002FF2AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 319FB40626DF55DA002FF2AA /* Main.storyboard */; };
 		319FB40A26DF55DC002FF2AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 319FB40926DF55DC002FF2AA /* Assets.xcassets */; };
 		319FB40D26DF55DC002FF2AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 319FB40B26DF55DC002FF2AA /* LaunchScreen.storyboard */; };
+		319FB41626DF5F9F002FF2AA /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319FB41526DF5F9F002FF2AA /* Car.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		319FB40926DF55DC002FF2AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		319FB40C26DF55DC002FF2AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		319FB40E26DF55DC002FF2AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		319FB41526DF5F9F002FF2AA /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		319FB3FF26DF55DA002FF2AA /* CalcApp */ = {
 			isa = PBXGroup;
 			children = (
+				319FB41426DF5F74002FF2AA /* Model */,
 				319FB40026DF55DA002FF2AA /* AppDelegate.swift */,
 				319FB40226DF55DA002FF2AA /* SceneDelegate.swift */,
 				319FB40426DF55DA002FF2AA /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				319FB40E26DF55DC002FF2AA /* Info.plist */,
 			);
 			path = CalcApp;
+			sourceTree = "<group>";
+		};
+		319FB41426DF5F74002FF2AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				319FB41526DF5F9F002FF2AA /* Car.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				319FB40526DF55DA002FF2AA /* ViewController.swift in Sources */,
 				319FB40126DF55DA002FF2AA /* AppDelegate.swift in Sources */,
+				319FB41626DF5F9F002FF2AA /* Car.swift in Sources */,
 				319FB40326DF55DA002FF2AA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NJ2TGXC7SP;
 				INFOPLIST_FILE = CalcApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +309,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yutaronakaji.CalcApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NJ2TGXC7SP;
 				INFOPLIST_FILE = CalcApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +329,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yutaronakaji.CalcApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
